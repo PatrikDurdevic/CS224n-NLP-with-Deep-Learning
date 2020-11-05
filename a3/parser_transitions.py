@@ -118,7 +118,7 @@ def minibatch_parse(sentences, model, batch_size):
     	for i in range(0, len(unfinished_parses), batch_size):
     		minibatch = unfinished_parses[i:max(len(unfinished_parses), i+batch_size)]
     		transitions = model.predict(minibatch)
-    		for j in range(i, i+batch_size):
+    		for j in range(i, i+len(transitions)):
     			unfinished_parses[j].parse_step(transitions[j - i])
     			if len(unfinished_parses[j].buffer) == 0 and len(unfinished_parses[j].stack) == 1:
     				_remove.append(j)
