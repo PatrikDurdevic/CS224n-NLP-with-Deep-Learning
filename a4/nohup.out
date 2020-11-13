@@ -1,0 +1,19 @@
+uniformly initialize parameters [-0.100000, +0.100000]
+use device: cuda:0
+/home/PatrikDurdevic/CS224n-Neural-Machine-Translation/nmt_model.py:328: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead. (Triggered internally at  /pytorch/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:28.)
+  e_t.data.masked_fill_(enc_masks.byte(), -float('inf'))
+epoch 1, iter 10, avg. loss 167.18, avg. ppl 23473.97 cum. examples 320, speed 2630.59 words/sec, time elapsed 2.02 sec
+epoch 1, iter 20, avg. loss 142.02, avg. ppl 3123.05 cum. examples 640, speed 2883.87 words/sec, time elapsed 3.98 sec
+begin Maximum Likelihood training
+Traceback (most recent call last):
+  File "run.py", line 343, in <module>
+    main()
+  File "run.py", line 335, in main
+    train(args)
+  File "run.py", line 169, in train
+    loss.backward()
+  File "/home/PatrikDurdevic/.local/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/PatrikDurdevic/.local/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

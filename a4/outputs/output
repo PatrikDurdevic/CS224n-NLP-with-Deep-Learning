@@ -1,0 +1,63 @@
+(a4) MBP-od-Tea-4:CS224n-Neural-Machine-Translation teadurdevic$ python run.py decode model.bin ./en_es_data/test.es ./en_es_data/test.en outputs/test_outputs.txt
+load test source sentences from [./en_es_data/test.es]
+load test target sentences from [./en_es_data/test.en]
+load model from model.bin
+Decoding: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8064/8064 [15:50<00:00,  8.48it/s]
+Corpus BLEU: 22.809881731057363
+(a4) MBP-od-Tea-4:CS224n-Neural-Machine-Translation teadurdevic$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
